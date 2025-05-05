@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    font-size: larger;
+    background-color: #eeeeee;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Define 6 equal columns */
+    grid-template-rows: 100px 300px 300px 300px; /* Add a 4th row with the same height as the 2nd and 3rd rows */
+    gap: 15px; /* Remove any gaps between rows and columns */
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 0px;
+}
+
+nav li {
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    font-size: larger;
+}   
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 25px;
+}
+
+nav a:hover {
+    color: palegoldenrod;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 15px;
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+    margin: 0px;
+    color: white;
+    flex: 0 0 auto;
+    min-height: max-content;
+    margin-top: auto; 
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 2rem 0;
+    
+}
+
+img {
+    width: 50%; /* Sets the width to 50% of the original size */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; 
+    margin: 0 auto; 
+}
+
+header {
+    grid-column: 1 / -1; /* Makes the header span all columns in the grid */
+    width: 100%; /* Ensures the header stretches the full width of the screen */
+    background-color: black; /* Optional: Set a background color for visibility */
+    color: white; /* Optional: Set text color */
+    text-align: center; /* Centers the text inside the header */
+}
+
+.emptyspaceleft {
+    background-color: blanchedalmond;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1; /* Occupies the first column */
+    grid-column-end: 4;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.emptyspaceright {
+    background-color: blanchedalmond;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4; /* Occupies the second column */
+    grid-column-end: 7;
+}
+
+.column1 {
+    background-color: #add8e6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1; /* Occupies the second column */
+    grid-column-end: 4;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.column2 {
+    background-color: rgb(86, 99, 86);
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4; /* Occupies the second column */
+    grid-column-end: 7;
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+.row4_col_1 {
+    background-color: #586f77;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1; /* Occupies the second column */
+    grid-column-end: 4;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.row4_col_2 {
+    background-color: rgb(22, 173, 22);
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4; /* Occupies the second column */
+    grid-column-end: 7;}
