@@ -9,7 +9,7 @@ html, body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Define 6 equal columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* Define 6 equal columns */
     grid-template-rows: 100px 300px 300px 300px; /* Add a 4th row with the same height as the 2nd and 3rd rows */
     gap: 15px; /* Remove any gaps between rows and columns */
     padding: 15px;
@@ -91,18 +91,15 @@ header {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1; /* Occupies the first column */
-    grid-column-end: 4;
-    display: grid;
-    align-content: center;
-    justify-content: center;
+    grid-column-end: 5;
 }
 
 .emptyspaceright {
     background-color: blanchedalmond;
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 4; /* Occupies the second column */
-    grid-column-end: 7;
+    grid-column-start: 5; /* Occupies the second column */
+    grid-column-end: 10;
 }
 
 .column1 {
@@ -138,7 +135,7 @@ header {
 }
 
 .row4_col_2 {
-    background-color: rgb(22, 173, 22);
+    background-color: rgb(37, 44, 37);
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 4; /* Occupies the second column */
